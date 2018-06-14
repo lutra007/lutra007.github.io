@@ -1,0 +1,57 @@
+html,
+* {
+    font-size: 16px;
+    font-family: roboto;
+}
+
+.container {
+    margin: 4%;
+    padding: 0;
+}
+
+h1 {
+    font-family: "Trebushet";
+    font-size: 2rem;
+    margin-bottom: 0.2rem;
+}
+
+h3 {
+    color: #74b4e4;
+    margin-bottom: 1.5rem;
+}
+
+a,
+#let_kira {
+    color: #8f4951;
+}
+
+a:hover,
+a:active {
+    color: #323b5a;
+}
+
+.main {
+    align-content: center;
+    width: 100%;
+    margin-top: 150px;
+}
+
+.col-sm-2 {
+    margin-top: 1.5rem;
+    padding-left: 0 !important;
+}
+
+.my_photo {
+    background-position: center center;
+    background-size: cover;
+}
+
+@media (min-width: 576px) {
+    .my_photo {
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        top: 0;
+        min-width: 200px !important;
+    }
+}
