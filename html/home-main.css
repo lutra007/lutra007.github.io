@@ -1,0 +1,89 @@
+h3 {
+    font-size: 0.8rem;
+}
+
+.jumbotron {
+    margin-top: 75px;
+    display: flex;
+    align-items: center;
+    background-image: url('img/jimbo2.jpg');
+    background-size: cover;
+    color: #ffffff;
+    height: 50%;
+    text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+
+.jumbotron h2 {
+    font-family: 'Trebuchet MS', Helvetica, serif;
+    font-size: 4rem;
+    font-weight: 700;
+    margin: 0;
+    color: white;
+    text-align: center;
+    line-height: 4.5rem;
+}
+
+.jumbotron h3 {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 0 50px;
+    color: white;
+}
+
+.jumbotron h3 a {
+    color: #00aab1;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.element li {
+    margin: 0.5rem 0;
+}
+
+.col-sm-3 h2 {
+    margin-bottom: 0.5rem;
+}
+
+.col-sm-3 h3,
+.col-sm-3 img {
+    margin-bottom: 1rem;
+}
+
+.fork {
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 20px;
+    padding: 3px 5px;
+    position: relative;
+    font-size: 1rem;
+    background-color: #00aab1;
+    color: white;
+    font-weight: 600;
+}
+
+.fork:hover {
+    color: #07112a;
+}
+
+.col-sm-3,
+.col-sm-1,
+.col-sm-5 {
+    margin: 0 0 30px;
+}
+
+#SNV_info {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.photo {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 0;
+}
+
+.backtotop {
+    bottom: 0 !important;
+}

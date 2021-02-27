@@ -1,0 +1,149 @@
+.cd-tab-filter li {
+    display: none;
+}
+
+.cd-tab-filter li:first-child {
+    /* this way the placehodler is always visible */
+    display: block;
+}
+
+.cd-tab-filter.is-open ul li {
+    display: block;
+}
+
+.cd-tab-filter li {
+    display: block;
+}
+
+.cd-tab-filter li.placeholder {
+    display: none !important;
+}
+
+.cd-tab-filter.is-open ul li {
+    display: block;
+}
+
+.cd-gallery li {
+    margin-bottom: 1.6em;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.cd-gallery div {
+    display: none;
+}
+
+.cd-gallery li.gap {
+    /* used in combination with text-align: justify to align gallery elements */
+    opacity: 0;
+    height: 0;
+    display: block;
+}
+
+.cd-gallery img {
+    display: block;
+    width: 100%;
+}
+
+.cd-gallery .cd-fail-message {
+    display: none;
+    text-align: center;
+}
+
+.cd-filter-block .list li {
+    position: relative;
+    margin-bottom: .8em;
+}
+
+.cd-filter-block .list li:last-of-type {
+    margin-bottom: 0;
+}
+
+.cd-filter-block input[type=radio],
+.cd-filter-block input[type=checkbox] {
+    /* hide original check and radio buttons */
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    z-index: 2;
+}
+
+.cd-filter-block .checkbox-label,
+.cd-filter-block .radio-label {
+    padding-left: 24px;
+    font-size: 1.4rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.cd-filter-block .checkbox-label::before,
+.cd-filter-block .checkbox-label::after,
+.cd-filter-block .radio-label::before,
+.cd-filter-block .radio-label::after {
+    /* custom radio and check boxes */
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.cd-filter-block .checkbox-label::before,
+.cd-filter-block .radio-label::before {
+    width: 16px;
+    height: 16px;
+    left: 0;
+}
+
+.cd-filter-block .checkbox-label::after,
+.cd-filter-block .radio-label::after {
+    /* check mark - hidden */
+    display: none;
+}
+
+.cd-filter-block .checkbox-label::after {
+    /* check mark style for check boxes */
+    width: 16px;
+    height: 16px;
+    background: url("../img/cd-icon-check.svg") no-repeat center center;
+}
+
+.cd-filter-block .radio-label::before,
+.cd-filter-block .radio-label::after {
+    border-radius: 50%;
+}
+
+.cd-filter-block .radio-label::after {
+    /* check mark style for radio buttons */
+    width: 6px;
+    height: 6px;
+    background-color: #ffffff;
+    left: 5px;
+}
+
+.cd-filter-block input[type=radio]:checked + label::before,
+.cd-filter-block input[type=checkbox]:checked + label::before {
+    border-color: #41307c;
+    background-color: #41307c;
+}
+
+.cd-filter-block input[type=radio]:checked + label::after,
+.cd-filter-block input[type=checkbox]:checked + label::after {
+    display: block;
+}
+
+@-moz-document url-prefix() {
+    /* hide custom arrow on Firefox - select element */
+    .cd-filter-block .cd-select::after {
+        display: none;
+    }
+}
