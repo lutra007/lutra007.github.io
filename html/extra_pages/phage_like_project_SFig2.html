@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en" class="no-js">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-144896733-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-144896733-1');
+
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Supplementary figure 1 for Phage-like plasmid project">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="../HTML5_reset.css">
+    <link rel="stylesheet" type="text/css" href="../general_settings.css">
+
+    <link rel="stylesheet" type="text/css" href="../publications-main.css">
+
+    <link rel="stylesheet" type="text/css" href="../home-main.css">
+    <link rel="stylesheet" type="text/css" href="../filter2.css">
+
+    <script src="../js/jquery-2.1.1.js"></script>
+    <script src="../js/fade_in.js"></script>
+    <script src="../js/jquery.mixitup.min.js"></script>
+    <script src="../js/main.js"></script>
+    <!-- <script src="filter1_modernizr.js"></script> <!-- Modernizr -->
+
+    <script>
+        function handle(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                document.getElementById('myBtn').click();
+            }
+        };
+
+        function changeText2() {
+            var userInput = document.getElementById('userInput').value.trim().split('.')[0];
+            var lnk = document.getElementById('lnk');
+            lnk.href = 'phage_like_project.html#' + userInput;
+            window.location = 'phage_like_project.html#' + userInput;
+        }
+
+    </script>
+
+
+    <title>Navon-Venezia lab</title>
+
+    <link rel="shortcut icon" href="url(../img/meta_img.jpg)" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Navon-Venezia Lab">
+    <meta property="og:image" content="url(../img/meta_img.jpg)">
+    <meta property="og:description" content="Bacterial Pathogenesis and Antibiotic Resistance">
+    <meta property="og:url" content="https://www.ariel.ac.il/sites/Navon-Venezia/">
+    <meta property="og:site_name" content="Navon-Venezia Lab">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta itemprop="name" content="Navon-Venezia Lab" />
+    <meta itemprop="description" content="Bacterial Pathogenesis and Antibiotic Resistance" />
+    <meta itemprop="image" content="url(../img/meta_img.jpg)" />
+</head>
+
+<body>
+    <header class="container">
+        <div class="row nav_large">
+            <h1 class="col-sm-4 snv"><a href="../index.html">Navon-Venezia lab</a></h1>
+            <nav class="col-sm-8" id="my-nav">
+                <a href='http://www.ariel.ac.il/en' target="_blank"><img id='Ariel' src='../img/Ariel_U_logo2.jpg' alt='Ariel univesity'/></a>
+            </nav>
+        </div>
+        <div class="row nav_short">
+            <h1 class="col-sm-5 snv"><a href="../index.html">Navon-Venezia lab</a></h1>
+
+        </div>
+    </header>
+
+    <section class="container page">
+        <div class="row">
+            <div class="col-sm-12">
+                <p><a href="phage_like_project.html">Go to Supplementary figure S1</a><br><br><br> </p>
+                <p id='page-title'><b>Phage-like plasmid project. Supplementary figure S2</b></p>
+            </div>
+        </div>
+        <main>
+            <div>
+
+                <div class="col-sm-12">
+                    <div class="col-sm-9">
+                        <h2>SFigure 2. Genetic comparison and clustering within each phage group</h2>
+                        <p>
+                            Clustermaps depict the coding region similarities within each Enterobacterales family. Panel A shows the D6 family, Panel B – P1, and Panel C – SSU5. The presence of sequences similar to each reference CDS is shown. The PLPs and phages are labeled on the rows (right) and the CDSs on the columns (top).
+
+                            <br><br>Each CDS similarity value was calculated as: %identity*[alignment length]/[CDS length]. The resulting matrix was plotted with Python seaborn.clustermap v0.10.1 applying a Ward’s Hierarchical clustering method with Euclidean distance. The relative values are represented as a continuous red-blue colored scale palette (legend top-left).
+
+                            <br><br>Rows on the left are labeled with discrete colored stripes showing bacterial hosts and major replicons, and the rows on the right show GenBank IDs and ARG content.
+
+                            <br><br></p>
+
+                        <h2>To enlarge, click on the image and zoom in
+
+                        </h2>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-sm-4">
+                <div>
+                    <a href="phage_like_project_SFig2.html#D6_clustermap_n45" class='fork' style='width:80%;'>D6 MF356679 CDSs presence clustermap, n = 45</a>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div>
+                    <a href="phage_like_project_SFig2.html#P1_clustermap_n160" class='fork' style='width:80%;'>P1 AF234172 CDSs presence clustermap, n = 160</a>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div>
+                    <a href="phage_like_project_SFig2.html#SSU5_clustermap_n292" class='fork' style='width:80%;'>SSU5 JQ965645 CDSs presence clustermap, n = 292</a>
+                </div>
+                <p> <br><br></p>
+            </div>
+
+
+            <section>
+                <div>
+                    <h2>D6 MF356679 CDSs presence clustermap, n = 45 <a class="anchor" id="D6_clustermap_n45"></a>
+                    </h2>
+                    <div class="col-sm-12">
+                        <a class='image' href="svg/SupplFigS2_D6_MF356679_CDSs_CDSs_heatmap_clustermap_rep.png" target="_blank"><img class='image' src="svg/SupplFigS2_D6_MF356679_CDSs_CDSs_heatmap_clustermap_rep.png" alt="D6 CDSs presence clustermap, n = 45"></a>
+                    </div>
+                </div>
+
+                <div>
+                    <h2>
+                        <p> <br><br></p>P1 AF234172 CDSs presence clustermap, n = 160 <a class="anchor" id="P1_clustermap_n160"></a>
+                    </h2>
+                    <div class="col-sm-12">
+                        <a class='image' href="svg/SupplFigS2_P1_AF234172_CDSs_CDSs_heatmap_clustermap_rep.png" target="_blank"><img class='image' src="svg/SupplFigS2_P1_AF234172_CDSs_CDSs_heatmap_clustermap_rep.png" alt="P1 CDSs presence clustermap, n = 160"></a>
+                    </div>
+                </div>
+
+
+                <div>
+                    <h2>
+                        <p> <br><br></p>SSU5 JQ965645 CDSs presence clustermap, n = 292 <a class="anchor" id="SSU5_clustermap_n292"></a>
+                    </h2>
+                    <div class="col-sm-12">
+                        <a class='image' href="svg/SupplFigS2_SSU5_JQ965645_CDSs_CDSs_heatmap_clustermap_rep.png" target="_blank"><img class='image' src="svg/SupplFigS2_SSU5_JQ965645_CDSs_CDSs_heatmap_clustermap_rep.png" alt="SSU5 CDSs presence clustermap, n = 292"></a>
+                    </div>
+                </div>
+
+
+
+            </section>
+        </main>
+
+    </section>
+
+
+    <footer class="container">
+        <div class="col-sm-12">
+            <a href="../index.html"><img id='lablogo' src='../img/lab_logo.png' style='height: 48px; float: left;'/></a>
+        </div>
+    </footer>
+    <div class="backtotop container">
+        <div class="row">
+            <div class="col-sm-1">
+                <a class='top' href="phage_like_project_SFig2.html">&uarr;</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
